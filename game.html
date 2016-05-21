@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="vieport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no">
+        <title>Juego</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!--
+        Importamos Phaser
+    -->
+        <script src="js/phaser.min.js"></script>
+
+    </head>
+    <body>
+    <!--
+        Estos estilos se pusieron aca y no en otro archivo ya que son muy pocos como para eso.
+        Ademas con el estilo de bootstrap es suficiente.
+    -->
+    <style>
+        body{
+            background-image: url('assets/back.jpg');
+            color: white;
+        }
+        li{
+            color: black;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <h1 class="center-block text-center">Perro espacial</h1>
+        </div>
+        <div class="row center-block text-center">
+
+            <h3 id="demo"></h3><h3 id="boom"></h3>
+            <div id="dogSpace"></div>
+        </div>
+        <button  class="btn btn-default col-lg-12" onclick="iniciarJuego()">Jugar<img src="assets/hero.png"></button>
+        <div class="row">
+
+            <div class="col-lg-6">
+                <h3>Numero de objetivos </h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h5>Te encanta</h5>
+                        <img src="assets/Chile.png">
+                        <a href="index.html" class="btn btn-default ">Inicio</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Te mata</h5>
+                        <img src="assets/kill1.png">
+                        <img src="assets/kill2.png">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h3>Controles</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><img src="assets/keys.png"> Movimiento con</li>
+                    <li class="list-group-item">Q - Zoom +</li>
+                    <li class="list-group-item">A - Zoom -</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--
+           Cargamos nuestro juego
+        -->
+    <script src="js/main.js"></script>
+    </body>
+</html>
