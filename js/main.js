@@ -44,9 +44,9 @@ function iniciarJuego() {
 
         if(game != null){
             game.destroy();
-            game = new Phaser.Game(window.innerWidth-110, 500, Phaser.AUTO, 'dogSpace', { preload: preload, create: create, update: update, render: render });
+            game = new Phaser.Game(window.innerWidth, 500, Phaser.AUTO, 'dogSpace', { preload: preload, create: create, update: update, render: render });
         }else{
-            game = new Phaser.Game(window.innerWidth-110, 500, Phaser.AUTO, 'dogSpace', { preload: preload, create: create, update: update, render: render });
+            game = new Phaser.Game(window.innerWidth, 500, Phaser.AUTO, 'dogSpace', { preload: preload, create: create, update: update, render: render });
         }
 
     }else{
